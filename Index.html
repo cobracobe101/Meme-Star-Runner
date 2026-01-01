@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meme-Star Runner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme-Star Runner</title>
 
-<style>
+  <style>
+    @keyframes neonPulse {
+      0% {
+        filter: drop-shadow(0 0 6px #ff00ff)
+                drop-shadow(0 0 12px #00ffff);
+        transform: scale(1);
+      }
+      50% {
+        filter: drop-shadow(0 0 16px #ff00ff)
+                drop-shadow(0 0 32px #00ffff);
+        transform: scale(1.03);
+      }
+      100% {
+        filter: drop-shadow(0 0 6px #ff00ff)
+                drop-shadow(0 0 12px #00ffff);
+        transform: scale(1);
+      }
+    }
+
+    .meme-star-logo {
+      max-width: 340px;
+      width: 90%;
+      display: block;
+      margin: 40px auto;
+      animation: neonPulse 3s infinite ease-in-out;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0b0014, #000000);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
