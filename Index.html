@@ -1,21 +1,105 @@
-<img
-  src="meme-star-runner.png"
-  alt="Meme-Star Runner"
-  style="
-    display: block;
-    max-width: 320px;
-    width: 90%;
-    margin: 20px auto;
-  "
->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meme-Star Runner</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #9ca3af;
+}
+
+.hero button {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ffe0, #ff4fd8);
+  color: #000;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,255,224,0.1);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ffe0, #ff4fd8);
+  margin-bottom: 15px;
+}
+
+.links a {
+  color: #00ffe0;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+  <!-- LOGO IMAGE AT TOP -->
+  <img
+    src="meme-star-runner.png"
+    alt="Meme-Star Runner"
+    style="
+      display: block;
+      max-width: 360px;
+      width: 90%;
+      margin: 0 auto 30px;
+    "
+  >
 
   <p>
     A live meme-coin billboard.<br>
     $1 in Bitcoin gets your coin listed below.
   </p>
 
-  <!-- REPLACE THIS LINK LATER WITH YOUR BTCPAY PAYMENT LINK -->
-  <a href="/submit.html">
+  <!-- REPLACE THIS LINK LATER WITH YOUR PAYMENT LINK -->
+  <a href="#">
     <button>⚡ Promote Your Meme Coin</button>
   </a>
 </div>
@@ -63,5 +147,5 @@
 </footer>
 
 </body>
-  </html>
-  
+</html>
+
