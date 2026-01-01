@@ -6,13 +6,23 @@
 <title>Meme-Star Runner</title>
 
 <style>
+/* ===== GLOBAL BACKGROUND ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
   color: #e5e7eb;
+
+  /* Black base + meme coin overlay */
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("meme-background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+/* ===== HERO SECTION ===== */
 .hero {
   padding: 60px 20px;
   text-align: center;
@@ -34,6 +44,7 @@ body {
   color: #000;
 }
 
+/* ===== CONTENT SECTIONS ===== */
 section {
   max-width: 1200px;
   margin: auto;
@@ -47,10 +58,10 @@ section {
 }
 
 .card {
-  background: #020617;
+  background: rgba(2, 6, 23, 0.85);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 0 15px rgba(0,255,224,0.1);
+  box-shadow: 0 0 15px rgba(0,255,224,0.08);
 }
 
 .logo {
@@ -79,9 +90,10 @@ footer {
 
 <body>
 
+<!-- ===== HERO ===== -->
 <div class="hero">
 
-  <!-- LOGO IMAGE AT TOP -->
+  <!-- LOGO -->
   <img
     src="meme-star-runner.png"
     alt="Meme-Star Runner"
@@ -98,18 +110,18 @@ footer {
     $1 in Bitcoin gets your coin listed below.
   </p>
 
-  <!-- REPLACE THIS LINK LATER WITH YOUR PAYMENT LINK -->
+  <!-- PAYMENT BUTTON -->
   <a href="#">
     <button>⚡ Promote Your Meme Coin</button>
   </a>
 </div>
 
+<!-- ===== PROMOTIONS ===== -->
 <section>
   <h2>🔥 Active Meme Coin Promotions</h2>
   <p style="color:#9ca3af;">Paid promotional listings · Rotated every 24 hours</p>
 
   <div class="grid">
-
     <div class="card">
       <div class="logo"></div>
       <h3>YOUR COIN HERE</h3>
@@ -120,10 +132,10 @@ footer {
       </div>
       <p style="color:#9ca3af;">⏱ Live for 24 hours</p>
     </div>
-
   </div>
 </section>
 
+<!-- ===== HOW IT WORKS ===== -->
 <section>
   <h2>⚡ How It Works</h2>
   <ol>
@@ -134,6 +146,7 @@ footer {
   </ol>
 </section>
 
+<!-- ===== DISCLAIMER ===== -->
 <section>
   <p style="color:#9ca3af; font-size:0.9rem;">
     Paid promotional listings only.<br>
