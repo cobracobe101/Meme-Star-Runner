@@ -1,164 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meme-Star Runner</title>
+  <meta charset="UTF-8" />
+  <title>Meme-Star Runner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-/* ===== GLOBAL BACKGROUND ===== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #e5e7eb;
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+    }
 
-  /* Black base + meme coin overlay */
-  background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-    url("meme-background.png");
+    body {
+      background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.75),
+          rgba(0, 0, 0, 0.75)
+        ),
+        url("memecoin-background.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-/* ===== HERO SECTION ===== */
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-}
+    .logo {
+      max-width: 280px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
 
-.hero p {
-  max-width: 700px;
-  margin: 20px auto;
-  color: #9ca3af;
-}
-
-.hero button {
-  padding: 16px 32px;
-  font-size: 1.1rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(90deg, #00ffe0, #ff4fd8);
-  color: #000;
-}
-
-/* ===== CONTENT SECTIONS ===== */
-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: rgba(2, 6, 23, 0.85);
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 0 15px rgba(0,255,224,0.08);
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #00ffe0, #ff4fd8);
-  margin-bottom: 15px;
-}
-
-.links a {
-  color: #00ffe0;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 0.9rem;
-}
-
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  color: #9ca3af;
-  font-size: 0.8rem;
-}
-</style>
+    .pay-button {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<!-- ===== HERO ===== -->
-<div class="hero">
+    <!-- TOP IMAGE -->
+    <img
+      src="meme-star-runner.png"
+      alt="Meme-Star Runner"
+      class="logo"
+    />
 
-  <!-- LOGO -->
-  <img
-    src="meme-star-runner.png"
-    alt="Meme-Star Runner"
-    style="
-      display: block;
-      max-width: 360px;
-      width: 90%;
-      margin: 0 auto 30px;
-    "
-  >
-
-  <p>
-    A live meme-coin billboard.<br>
-    $1 in Bitcoin gets your coin listed below.
-  </p>
-
-  <!-- PAYMENT BUTTON -->
-  <a href="#">
-    <button>⚡ Promote Your Meme Coin</button>
-  </a>
-</div>
-
-<!-- ===== PROMOTIONS ===== -->
-<section>
-  <h2>🔥 Active Meme Coin Promotions</h2>
-  <p style="color:#9ca3af;">Paid promotional listings · Rotated every 24 hours</p>
-
-  <div class="grid">
-    <div class="card">
-      <div class="logo"></div>
-      <h3>YOUR COIN HERE</h3>
-      <p>Chain: Solana</p>
-      <div class="links">
-        <a href="#">Website</a>
-        <a href="#">X</a>
-      </div>
-      <p style="color:#9ca3af;">⏱ Live for 24 hours</p>
+    <!-- BITCOIN PAY BUTTON -->
+    <div class="pay-button">
+      <a
+        href=""
+        class="blockoPayBtn"
+        data-toggle="modal"
+        data-uid="32a3fea8442c4112"
+      >
+        <img
+          width="160"
+          src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png"
+          alt="Pay with Bitcoin"
+        />
+      </a>
     </div>
+
   </div>
-</section>
 
-<!-- ===== HOW IT WORKS ===== -->
-<section>
-  <h2>⚡ How It Works</h2>
-  <ol>
-    <li>Pay $1 in Bitcoin</li>
-    <li>Submit your meme coin</li>
-    <li>Your coin appears above</li>
-    <li>Visible for 24 hours</li>
-  </ol>
-</section>
-
-<!-- ===== DISCLAIMER ===== -->
-<section>
-  <p style="color:#9ca3af; font-size:0.9rem;">
-    Paid promotional listings only.<br>
-    No endorsements. No guarantees.<br>
-    No investment advice.
-  </p>
-</section>
-
-<footer>
-  Bitcoin-only promotions · Meme-Star Runner
-</footer>
-
+  <!-- BLOCKONOMICS SCRIPT -->
+  <script src="https://www.blockonomics.co/js/pay_button.js"></script>
 </body>
-</html>
-
+        </html>
+        
