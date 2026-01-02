@@ -1,83 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Meme-Star Runner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meme-Star Runner</title>
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      color: #ffffff;
-    }
+<style>
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      background: 
-        linear-gradient(
-          rgba(0, 0, 0, 0.75),
-          rgba(0, 0, 0, 0.75)
-        ),
-        url("memecoin-background.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+/* PAGE */
+body {
+  min-height: 100vh;
+  background: #0b0b0f;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .container {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    .logo {
-      max-width: 280px;
-      width: 100%;
-      margin-bottom: 30px;
-    }
+/* LOGO */
+.hero img {
+  max-width: 320px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+}
 
-    .pay-button {
-      margin-top: 10px;
-    }
-  </style>
+/* TEXT */
+.hero p {
+  max-width: 600px;
+  color: #9ca3af;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* PAY BUTTON WRAP */
+.pay-wrap {
+  margin: 10px 0 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- TOP IMAGE -->
-    <img
-      src="meme-star-runner.png"
-      alt="Meme-Star Runner"
-      class="logo"
-    />
+<div class="hero">
 
-    <!-- BITCOIN PAY BUTTON -->
-    <div class="pay-button">
-      <a
-        href=""
-        class="blockoPayBtn"
-        data-toggle="modal"
-        data-uid="32a3fea8442c4112"
-      >
-        <img
-          width="160"
-          src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png"
-          alt="Pay with Bitcoin"
-        />
-      </a>
-    </div>
+  <!-- LOGO -->
+  <img src="meme-star-runner.png" alt="Meme-Star Runner Logo">
 
+  <!-- DESCRIPTION -->
+  <p>
+    A live meme-coin billboard.<br>
+    $1 in Bitcoin gets your meme coin featured for 24 hours.
+  </p>
+
+  <!-- BITCOIN PAY BUTTON -->
+  <div class="pay-wrap">
+    <a href="" class="blockoPayBtn" data-toggle="modal" data-uid="32a3fea8442c4112">
+      <img width="160" src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png" alt="Pay with Bitcoin">
+    </a>
   </div>
 
-  <!-- BLOCKONOMICS SCRIPT -->
-  <script src="https://www.blockonomics.co/js/pay_button.js"></script>
+  <p style="font-size:0.85rem;">
+    After payment, you’ll enter your meme coin details.
+  </p>
+
+</div>
+
+<footer>
+  Bitcoin-only promotions · Meme-Star Runner
+</footer>
+
+<!-- BLOCKONOMICS SCRIPT -->
+<script src="https://www.blockonomics.co/js/pay_button.js"></script>
+
 </body>
-        </html>
-        
+</html>
+
