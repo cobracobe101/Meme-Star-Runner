@@ -6,16 +6,13 @@
 <title>Meme-Star Runner</title>
 
 <style>
-/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* PAGE */
 body {
-  min-height: 100vh;
   background: #0b0b0f;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
@@ -32,32 +29,83 @@ body {
   padding: 40px 20px;
 }
 
-/* LOGO */
 .hero img {
   max-width: 320px;
   width: 90%;
-  height: auto;
   margin-bottom: 30px;
 }
 
-/* TEXT */
 .hero p {
   max-width: 600px;
   color: #9ca3af;
   font-size: 1.05rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
-/* PAY BUTTON WRAP */
 .pay-wrap {
-  margin: 10px 0 15px;
+  margin-bottom: 10px;
+}
+
+/* PROMOTIONS */
+.promos {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.promos h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.promos p {
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #1f2933;
+}
+
+.card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #00ffe0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-right: 10px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 30px 20px;
   font-size: 0.8rem;
   color: #6b7280;
 }
@@ -66,18 +114,15 @@ footer {
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
-
-  <!-- LOGO -->
   <img src="meme-star-runner.png" alt="Meme-Star Runner Logo">
 
-  <!-- DESCRIPTION -->
   <p>
     A live meme-coin billboard.<br>
     $1 in Bitcoin gets your meme coin featured for 24 hours.
   </p>
 
-  <!-- BITCOIN PAY BUTTON -->
   <div class="pay-wrap">
     <a href="" class="blockoPayBtn" data-toggle="modal" data-uid="32a3fea8442c4112">
       <img width="160" src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png" alt="Pay with Bitcoin">
@@ -85,18 +130,62 @@ footer {
   </div>
 
   <p style="font-size:0.85rem;">
-    After payment, you’ll enter your meme coin details.
+    After payment, you’ll submit your coin details.
   </p>
-
 </div>
+
+<!-- PROMOTIONS -->
+<section class="promos">
+  <h2>🔥 Live Meme Coin Promotions</h2>
+  <p>Paid listings · Rotated every 24 hours</p>
+
+  <div class="grid">
+
+    <!-- COIN 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/48" alt="">
+      <h3>DOGE 2.0</h3>
+      <p>Chain: Solana</p>
+      <a href="#">Website</a>
+      <a href="#">X</a>
+    </div>
+
+    <!-- COIN 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/48" alt="">
+      <h3>PEPE MOON</h3>
+      <p>Chain: Ethereum</p>
+      <a href="#">Website</a>
+      <a href="#">X</a>
+    </div>
+
+    <!-- COIN 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/48" alt="">
+      <h3>CATINU</h3>
+      <p>Chain: BNB</p>
+      <a href="#">Website</a>
+      <a href="#">X</a>
+    </div>
+
+    <!-- COIN 4 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/48" alt="">
+      <h3>FROG X</h3>
+      <p>Chain: Base</p>
+      <a href="#">Website</a>
+      <a href="#">X</a>
+    </div>
+
+  </div>
+</section>
 
 <footer>
   Bitcoin-only promotions · Meme-Star Runner
 </footer>
 
-<!-- BLOCKONOMICS SCRIPT -->
 <script src="https://www.blockonomics.co/js/pay_button.js"></script>
 
 </body>
-</html>
-
+  </html>
+  
